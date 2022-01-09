@@ -1,13 +1,8 @@
-import './style.scss';
-import { debounce } from 'lodash-es';
-import styles from `./example.module.css`
-import favicon from './favicon.svg'
+import App from './App.vue';
+import { createApp } from 'vue';
 
-console.log(debounce);
+import('./async.js').then((mod) => {
+  console.log(mod);
+});
 
-document.querySelector('#app').innerHTML = `
-  <h1 class="${styles.title}">Hello Vite!!!</h1>
-  <img src="${favicon}" />
-  <img src="/favicon.svg" />
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`;
+createApp(App).mount('#app');
