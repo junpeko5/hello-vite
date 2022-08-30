@@ -9,7 +9,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.0.1",
     "@vue/compiler-sfc": "^3.2.26",
-    "vite": "^2.7.2"
+    "vite": "^2.9.13"
   },
   "dependencies": {
     "sass": "^1.47.0",
